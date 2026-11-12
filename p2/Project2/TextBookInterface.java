@@ -79,7 +79,7 @@ public interface TextBookInterface {
 	 * 
 	 * @param postIndex index of post targeted by this comment
 	 * @param author name of comment's author
-	 * @param text text of the comment
+	 * @param text text of the comment0
 	 * @throws IndexOutOfBoundsException
 	 */
 	public void addComment(int postIndex, String author, String text);
