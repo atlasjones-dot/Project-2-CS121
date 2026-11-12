@@ -109,6 +109,9 @@ public class TextBook implements TextBookInterface
     public Post removePost(int index) 
     {
         Post removedPost = postsList.remove(index);
+        String fileName = removedPost.getFilename();
+        File f = new File(fileName);
+        f.delete();
 
         // Rewrite the file with remaining post IDs
         try 
